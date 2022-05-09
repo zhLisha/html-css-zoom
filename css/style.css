@@ -14,12 +14,12 @@ body{
 
 .container{
     width: 90%;
+    margin: 0 auto;
     padding: 10px 0;
 }
 
 .flex-container{
     display: flex;
-    margin: 0 auto;
 }
 
 .btn{
@@ -35,6 +35,10 @@ body{
 img{
     width: 100%;
     height: 100%;
+}
+
+ul{
+    list-style-type: none;
 }
 
 /* HEADER */
@@ -63,21 +67,20 @@ img{
 }
 
 /* MAIN */
+main{
+    overflow-y: auto;
+}
 main .container.flex-container{
     justify-content: space-between;
     flex-wrap: wrap;
-    height: calc(100vh - 110px);
-
-    overflow-y: auto;
+    height: calc(100vh - 110px); 
     
 }
 .card{
-    width: calc((100% / 7) - 3px);
-    height: 120px;
+    width: 220px;
+    height: 160px;
     position: relative;
-    padding: 5px 0;
-    flex-shrink: 0;
-    
+    padding: 5px 2px;
 }
 
 .btn.microphone{
@@ -90,8 +93,44 @@ main .container.flex-container{
 }
 
 /* FOOTER */ 
-.action-bottom{
-    z-index: 10;
-    height: 70px;
+footer{
     background-color: #222222;
+}
+.action-bottom{
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 70px;
+}
+
+.action-bottom ul li{
+    background-color: #22222200;
+}
+
+.btn.bottom {
+    background-color: #22222200;
+}
+.icon-info{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.fas.fa-angle-up{
+    font-size: 10px;
+}
+
+.share-screen i{
+    color: #44ae07;
+}
+
+.angle{
+    color: white;
+    padding: 0 10px;
+}
+
+.end-meeting{
+    color: red;
+    height: 100%;
+    border-radius: 0;
+    padding: 0 15px;
 }
